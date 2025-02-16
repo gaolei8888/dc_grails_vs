@@ -1,0 +1,58 @@
+{
+  "name": "dc-grails-vs",
+  "displayName": "DC Grails VS",
+  "description": "An extension for Grails projects",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+
+  "categories": [
+    "Other"
+  ],
+
+  "activationEvents": [
+    "onCommand:grails.runApp",
+    "onCommand:grails.stopApp",
+    "onCommand:grails.startDebugApp",
+    "onCommand:grails.stopDebugApp"
+  ],
+
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "grails.runApp",
+        "title": "Grails: Run App"
+      },
+      {
+        "command": "grails.stopApp",
+        "title": "Grails: Stop App"
+      },
+      {
+        "command": "grails.startDebugApp",
+        "title": "Grails: Start Debug App"
+      },
+      {
+        "command": "grails.stopDebugApp",
+        "title": "Grails: Stop Debug App"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "groovy",
+        "path": "./snippets/grails-snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/node": "^18.0.0",
+    "@types/mocha": "^10.0.10",
+    "eslint": "^8.0.0",
+    "mocha": "^10.0.0"
+  }
+}

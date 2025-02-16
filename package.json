@@ -30,12 +30,12 @@
         "title": "Grails: Stop App"
       },
       {
-        "command": "grails.startDebugApp",
-        "title": "Grails: Start Debug App"
+        "command": "grails.debug",
+        "title": "Grail: Debug"
       },
       {
-        "command": "grails.stopDebugApp",
-        "title": "Grails: Stop Debug App"
+        "command": "grails.stopDebug",
+        "title": "Grails: Stop Debugging"
       }
     ],
     "snippets": [

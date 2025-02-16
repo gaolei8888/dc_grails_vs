@@ -14,11 +14,12 @@
   "activationEvents": [
     "onCommand:grails.runApp",
     "onCommand:grails.stopApp",
-    "onCommand:grails.startDebugApp",
-    "onCommand:grails.stopDebugApp"
+    "onCommand:grails.debug",
+    "onCommand:grails.stopDebug"
   ],
 
   "main": "./extension.js",
+  
   "contributes": {
     "commands": [
       {

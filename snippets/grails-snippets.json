@@ -24,6 +24,19 @@
         "}"
       ],
       "description": "Create a Grails domain class"
+    },
+    "Grails Service Class": {
+      "prefix": "grailsService",
+      "body": [
+        "package ${1:com.example}",
+        "",
+        "class ${2:MyDomain} {",
+        "    static constraints = {",
+        "        // add constraints here",
+        "    }",
+        "}"
+      ],
+      "description": "Create a Grails service"
     }
   }
   
